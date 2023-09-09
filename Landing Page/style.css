@@ -1,0 +1,384 @@
+ @import url('https://fonts.googleapis.com/css2?family=Barriecito&family=PT+Serif&family=Roboto:wght@300&family=Source+Code+Pro:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+  scroll-behavior: smooth;
+  transition : 0.5s;
+}
+.logo{
+  font-family: 'Barriecito', cursive;
+  
+}
+#logo{
+text-align: start;
+}
+.nav {
+  background-image: linear-gradient(to right , rgb(102, 209, 207) , white);
+  backdrop-filter: blur(10px);
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  height: 75px;
+  background-color: #fff;
+  box-shadow: 3px 3px 10px lightslategray;
+  font-size: 20px;
+  align-items: center;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  font-weight: 600;
+  z-index: 1;
+}
+.logo {
+  font-family: 'Barriecito', cursive;
+   flex: 1;
+  font-size: 30px;
+  padding: 20px;
+  margin-left: 50px;
+
+}
+
+.nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+.nav li {
+     display: inline;
+     text-align: center;
+     padding: 20px;
+     cursor: pointer;
+   
+  }  
+  nav li:hover {
+    padding: 15px;
+    font-size: larger;
+    transition: 0.3s;
+    border-bottom: 4px solid black;
+    font-weight: 300;
+  
+ } 
+ .btn{
+  display: inline-block;
+  background-image: linear-gradient(to bottom right , rgb(25, 197, 236) , white);
+  width: 200px;
+  border: 0.5px solid #333;
+  border-radius:7px;
+  padding: 10px;
+  margin-top: 10px;
+  margin-left: 15px;
+  font-size: 18px;
+  text-align: center;
+  backdrop-filter:blur(8px)
+
+ } 
+ .btn:hover{
+box-shadow: 5px 5px 10px #333;
+cursor: pointer;
+font-size: 20px;
+transition: 0.3s;
+ }
+ .body{
+  background-image: url(p2.jpg);
+  padding: 280px;
+  padding-left: 1%;
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px #333;
+  margin-left: 30px;
+  margin-right: 30px;
+ }
+ .content{
+  padding-inline-start: 20px;
+  font-size: 20px;
+ }
+ .about{
+  padding: 200px;
+  background-image: url(p7.jpg);
+  border-radius: 10px ;
+  box-shadow: 5px 5px 15px #333;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-top: 50px;
+ }
+ .about-content{
+  display: flex;
+  flex-direction: column;
+text-align: center;
+justify-content: space-between;
+background-color:  transparent;
+ }
+ .title{
+padding-bottom: 20px;
+font-size: 45px;
+color: rgb(131, 7, 247);
+ }
+ #p1{
+  font-size: 20px;
+  font: bolder;
+ }
+ #h4{
+  padding: 10px;
+  font-size: 25px;
+ }
+
+ .services {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.service-item {
+  flex: 1;
+  background-color:white;
+  padding: 50px 10px;
+  border: black solid 1px;
+  border-radius: 8px;
+  text-align: center;
+  margin: 115px 50px;
+  transition: all 1s;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.service-item:hover {
+  box-shadow: 10px 10px 20px lightsteelblue;
+  font-size: larger;
+}
+
+.service-item h2 {
+  font-family: Barlow Condensed;
+  font-size: 18px;
+  width: 120px;
+  color: #001f38;
+  flex: 1;
+}
+
+.service-item img {
+  width: 60px;
+  height: 60px;
+  flex: 1;
+}
+
+.places{
+  background-image: linear-gradient(to top left , rgb(85, 245, 207) , white);
+  padding: 60px;
+  border-radius: 10px ;
+  box-shadow: 5px 5px 15px #333;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-top: 40px;
+ }
+
+.places-text {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.places-text h2 {
+  font-size: 55px;
+  color: #191d34;
+  letter-spacing: 1px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 30px;
+  align-items: center;
+  justify-items: center;
+  text-align: center;
+}
+
+.card {
+  border: 1px solid lightgray;
+  box-shadow: 2px 2px 6px 0 rgba(0, 0, 0, 0.3);
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  width: 250px;
+  height: 640px;
+}
+
+.card img {
+  max-width: 100%;
+  height: 300px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.cards .text {
+  padding: 30px;
+  font-family: Barlow Condensed;
+  line-height: 50px;
+}
+
+.cards .card-box {
+  padding: 20%px;
+  width: auto;
+  display: flex;
+  flex-flow: row;
+  background-color: #fbe13c;
+  font-size: 18px;
+  font-family: Roboto;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.cards .time {
+  flex: 1;
+}
+
+.cards .location {
+  flex: 2;
+}
+
+.cards .cost {
+  color: #4cafad;
+  font-size: 20px;
+}
+
+
+ .gallery-content{
+  background-image: linear-gradient(to bottom right, grey, white);
+  height:830px ;
+  width: 1480px;
+  border-radius: 10px ;
+  box-shadow: 5px 5px 15px #333;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-top: 50px;
+ }
+ .gallery{
+
+  display:flex;
+ flex-wrap: wrap;
+  justify-content:space-evenly;
+
+}
+.card{
+  width: 300px;
+  position:relative; 
+  /* because we wnat to overlap some of transition and details */
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.card img{
+  height: 100%;
+   width: 100%;
+   filter: grayscale(1);
+   box-shadow: 0 0 20px #333;
+object-fit: cover;
+}
+.card:hover{
+  transform: scale(1.03);
+  filter: drop-shadow(0 0 10px #333);
+  transition: 0.5s;
+cursor: pointer;
+}
+.card:hover img{
+filter: grayscale(0);
+}
+.card figcaption{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 25px;
+  width: 100%;
+  height: 20%;
+  font-size: 16px;
+  font-weight: 500;
+  color: #fff;
+  opacity: 0;
+  border-radius: 0 0 10px 10px;
+  background: linear-gradient(0deg , rgba(0,0,0,0.5) 0%,rgba(255,255,255,0));
+  transition: 0.3s;
+}
+.card figcaption:hover{
+  opacity: 1;
+  transform:scale(1.05);
+}
+#gallery{
+  text-align: center;
+  font-size: 50px;
+  color: rgb(65, 0, 65);
+}
+.contact{
+  height:600px ;
+  width: 1480px;
+  border-radius: 10px ;
+  box-shadow: 5px 5px 15px #333;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-top: 50px;
+ }
+ .inner-box{
+  
+ border-radius: 10px;
+  box-shadow: 10px 10px 30px #333;
+  margin: 100px;
+ 
+  padding: 30px 30px 30px;
+  border: 2px solid black;
+  color: #100303;
+  font-size: 15px;
+  background-image: linear-gradient(to top left , #ffffffff , #ffffff33);
+  backdrop-filter: blur(8px);
+  border-radius: 8px;
+  box-shadow: 5px 5px 10px #333;
+
+}
+
+.main-body{
+  margin: 20px 0;
+}
+
+
+.main-body p label{
+  display: block;
+  font-weight: bold;
+}
+.main-body p input{
+  
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #cccc;
+  border-radius: 4px;
+  font-size: 1 rem;
+  margin-top: 4px;
+  width: 500px;
+}
+.main-body p input[type="submit"]{
+  background-color: #3498db;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+.main-body p input[type="submit"]:hover{
+  background-color:#2773a5;
+}
+ 
+
+
+
+
+
+
+
+
+
+
+
+ 
